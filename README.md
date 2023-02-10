@@ -46,7 +46,7 @@ yarn hardhat test
 
 And it will added to a output file called `gas-report.txt`
 
-# Learning Outcome
+## Learning Outcome
 
 ```
 1. Learnt to configure & deploy contract using hardhat(both local and testnet)
