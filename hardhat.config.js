@@ -15,6 +15,11 @@ module.exports = {
             accounts: [GOERLI_PRIVATE_KEY],
             chainId: 5,
         },
+        localhost: {
+            url: "http://127.0.0.1:8545/",
+            // accounts: [] This will prick by hardhat automatically
+            chainId: 31337,
+        },
     },
     etherscan: {
         apiKey: ETHERSCAN_API_KEY,
