@@ -3,6 +3,7 @@ require("dotenv").config()
 require("@nomiclabs/hardhat-etherscan")
 require("./tasks/block-number")
 require("hardhat-gas-reporter")
+require("solidity-coverage")
 
 const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL
 const GOERLI_PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY

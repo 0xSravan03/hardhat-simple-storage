@@ -26,4 +26,12 @@ describe("SimpleStorage", function () {
 
         assert.equal(updatedValue.toString(), newValue)
     })
+
+    it("It should add Person details to array", async function () {
+        const expectedValue = [13, "Sravan"]
+        const tx = await contract.addPerson("Sravan", 13)
+        await tx.wait(1)
+        const result = await contract.people(0)
+        assert.equal(expectedValue.toString(), result.toString())
+    })
 })
